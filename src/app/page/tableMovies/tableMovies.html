@@ -1,0 +1,85 @@
+<div class="container-fluid p-5">
+    <div class="row">
+        <div class="col-8">
+            <h1>Administrador de peliculas</h1>   
+        </div>
+        <div class="col-2">
+            <div class="d-grid gap-2">
+                <button
+                    type="button"
+                    class="btn btn-success mb-3"
+                    (click)="AgregarPelicula()"
+                >
+                    Agregar pelicula
+                </button>
+            </div>
+        </div>
+        <div class="col-2">
+            <div class="d-grid gap-2">
+                <button
+                    type="button"
+                    class="btn btn-success mb-3"
+                    (click)="AgregarPelicula()"
+                >
+                    Vista administrador
+                </button>
+            </div>
+        </div>
+        
+    </div>
+    <div
+        class="table-responsive"
+    >
+        <table
+            class="table table-dark"
+        >
+            <thead>
+                <tr>
+                    <th scope="col">Imagen</th>
+                    <th scope="col">Titulo</th>
+                    <th scope="col">Genero</th>
+                    <th scope="col">Año de estreno</th>
+                    <th scope="col">Calificación</th>
+                    <th scope="col">Opciones</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="">
+                    <td scope="row"></td>
+                    <td>Interstellar</td>
+                    <td>Science Fiction</td>
+                    <td>2014</td>
+                    <td>8.6</td>
+                    <td>
+                        <button type="button" class="btn btn-warning btn-sm">Editar</button>
+                        <button type="button" class="ms-2 btn btn-danger btn-sm">Eliminar</button>
+                    </td>
+                </tr>
+                <tr class="">
+                    <td scope="row"></td>
+                    <td>Cars</td>
+                    <td>Animation</td>
+                    <td>2006</td>
+                    <td>7.1</td>
+                    <td>
+                        <button type="button" class="btn btn-warning btn-sm">Editar</button>
+                        <button type="button" class="ms-2 btn btn-danger btn-sm">Eliminar</button>
+                    </td>
+                </tr>
+                <tr class="">
+                    <td scope="row"></td>
+                    <td>Titanic</td>
+                    <td>Romance</td>
+                    <td>1997</td>
+                    <td>7.8</td>
+                    <td class="">
+                        <button type="button" class="btn btn-warning btn-sm">Editar</button>
+                        <button type="button" class="ms-2 btn btn-danger btn-sm">Eliminar</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    
+
+</div>
