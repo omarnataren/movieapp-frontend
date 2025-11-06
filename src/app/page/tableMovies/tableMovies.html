@@ -1,7 +1,8 @@
 <div class="container-fluid p-5">
     <div class="row">
         <div class="col-8">
-            <h1>Administrador de peliculas</h1>   
+            <h1>Administrador de peliculas</h1>  
+            
         </div>
         <div class="col-2">
             <div class="d-grid gap-2">
@@ -19,7 +20,6 @@
                 <button
                     type="button"
                     class="btn btn-success mb-3"
-                    (click)="AgregarPelicula()"
                 >
                     Vista administrador
                 </button>
@@ -44,7 +44,9 @@
                 </tr>
             </thead>
             <tbody>
-                @for(movie of movies; track movie.id){
+                
+                
+                    @for(movie of movies; track movie.id){
                     <tr class="">
                         <td scope="row"></td>
                         <td>{{ movie.title }}</td>
@@ -56,7 +58,13 @@
                             <button type="button" class="ms-2 btn btn-danger btn-sm">Eliminar</button>
                         </td>
                     </tr>
+                    } @empty{
+                    <tr>
+                        <td colspan="6" class="text-center">No hay peliculas disponibles</td>
+                    </tr>
                 }
+                
+                
             </tbody>
         </table>
     </div>

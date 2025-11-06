@@ -11,7 +11,6 @@ import { Movie } from '../../../interfaces/movie.interface';
       display: block;
     }
   `,
-  changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class TableMovies { 
   private router = inject(Router);
@@ -23,13 +22,13 @@ export class TableMovies {
   }
   
   AgregarPelicula() {
-    this.router.navigate(['/add-Movie']);
+    this.router.navigate(['/form-movies']);
   }
   
   getMovies(){
     this.movieService.getMovies().subscribe(
       {
-        next: (data: any) => {
+        next: (data) => {
           console.log(data);
           this.movies = data;
         },
